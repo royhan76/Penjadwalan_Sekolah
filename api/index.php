@@ -8,6 +8,8 @@ $projectRoot = dirname(__DIR__);
 // Set working directory ke project root
 chdir($projectRoot);
 
+header('Content-Type: text/html; charset=UTF-8');
+
 // Pre-define BASE_PATH sebelum config.php di-load
 // supaya dirname(__DIR__) di config.php tidak salah path
 if (!defined('BASE_PATH'))      define('BASE_PATH',      $projectRoot);

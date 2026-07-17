@@ -1,22 +1,22 @@
 {
-    "version": 2,
-    "builds": [
-        {
-            "src": "api/index.php",
-            "use": "@vercel/php"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "/api/index.php"
-        }
-    ],
-    "env": {
-        "SPREADSHEET_ID": "@spreadsheet_id",
-        "GOOGLE_SERVICE_ACCOUNT_JSON": "@google_service_account_json",
-        "SESSION_SECRET": "@session_secret",
-        "ADMIN_USERNAME": "@admin_username",
-        "ADMIN_PASSWORD": "@admin_password"
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/index.php",
+      "use": "@vercel/php"
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/api/index.php"
+    }
+  ],
+  "env": {
+    "SPREADSHEET_ID": "@spreadsheet_id",
+    "GOOGLE_SERVICE_ACCOUNT_JSON": "@google_service_account_json",
+    "SESSION_SECRET": "@session_secret",
+    "ADMIN_USERNAME": "@admin_username",
+    "ADMIN_PASSWORD": "@admin_password"
+  }
 }
