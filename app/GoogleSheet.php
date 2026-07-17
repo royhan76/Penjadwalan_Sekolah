@@ -15,8 +15,8 @@ class GoogleSheet
 
     public function __construct()
     {
-        $this->spreadsheetId = env('1kQ0zdK0WdtrEWl1jy_ypMoxEY6PsdEWK3_YVY3Q-xAM');
-        // $this->spreadsheetId = env('SPREADSHEET_ID');
+        // $this->spreadsheetId = env('1kQ0zdK0WdtrEWl1jy_ypMoxEY6PsdEWK3_YVY3Q-xAM');
+        $this->spreadsheetId = env('SPREADSHEET_ID');
 
         
         $client = new Client();
