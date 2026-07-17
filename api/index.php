@@ -1,15 +1,19 @@
 <?php
 // api/index.php - Vercel entry point
-// Routes all requests to public/index.php
+// All requests are routed here by vercel.json
 
-// Set correct working directory to project root
+// Project root = satu level di atas folder api/
 $projectRoot = dirname(__DIR__);
+
+// Set working directory ke project root
 chdir($projectRoot);
 
-// Define BASE_PATH explicitly agar tidak bergantung pada chdir
-if (!defined('BASE_PATH')) {
-    define('BASE_PATH', $projectRoot);
-}
+// Pre-define BASE_PATH sebelum config.php di-load
+// supaya dirname(__DIR__) di config.php tidak salah path
+if (!defined('BASE_PATH'))      define('BASE_PATH',      $projectRoot);
+if (!defined('APP_PATH'))       define('APP_PATH',       $projectRoot . '/app');
+if (!defined('PUBLIC_PATH'))    define('PUBLIC_PATH',    $projectRoot . '/public');
+if (!defined('TEMPLATES_PATH')) define('TEMPLATES_PATH', $projectRoot . '/templates');
 
-// Load the main public router
+// Load main router
 require_once $projectRoot . '/public/index.php';
