@@ -1,14 +1,22 @@
+# Dependencies
 /vendor/
+
+# Environment variables - JANGAN di-commit
 /.env
-/credentials.json
-*.log
+
+# Google Service Account credentials - JANGAN di-commit
+jadwal-sekolah-502704-38aa5ab2c1cb.json
+
+# OS files
 .DS_Store
 Thumbs.db
-/public/assets/uploads/
+
+# Editor
 *.swp
-*.json
-credentials/
-# Google Service Account
-*.json
-# atau lebih spesifik:
-jadwal-sekolah-502704-38aa5ab2c1cb.json
+
+# Uploads
+/public/assets/uploads/
+
+# Scratch / temp files
+/scratch/
+/log.txt

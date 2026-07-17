@@ -1,10 +1,10 @@
 <?php
 // app/config.php - Application Bootstrap & Configuration
 
-define('BASE_PATH', dirname(__DIR__));
-define('APP_PATH', BASE_PATH . '/app');
-define('PUBLIC_PATH', BASE_PATH . '/public');
-define('TEMPLATES_PATH', BASE_PATH . '/templates');
+if (!defined('BASE_PATH'))     define('BASE_PATH',      dirname(__DIR__));
+if (!defined('APP_PATH'))      define('APP_PATH',       BASE_PATH . '/app');
+if (!defined('PUBLIC_PATH'))   define('PUBLIC_PATH',    BASE_PATH . '/public');
+if (!defined('TEMPLATES_PATH'))define('TEMPLATES_PATH', BASE_PATH . '/templates');
 
 // Load .env if not already in environment
 if (file_exists(BASE_PATH . '/.env')) {

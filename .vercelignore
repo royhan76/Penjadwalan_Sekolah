@@ -1,0 +1,10 @@
+# Jangan upload file sensitif ke Vercel
+.env
+jadwal-sekolah-502704-38aa5ab2c1cb.json
+
+# Scratch files
+scratch/
+log.txt
+
+# Git
+.git/
