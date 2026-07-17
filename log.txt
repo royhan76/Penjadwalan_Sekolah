@@ -1,0 +1,15 @@
+
+
+  Sekarang buat halaman jadwal (yang paling kompleks — grid interaktif):
+● Create(E:/PROJECT/WEB/sdd_penjadwalan/public/views/jadwal.view.php)
+● Create(E:/PROJECT/WEB/sdd_penjadwalan/public/views/error.view.php)
+● Create(E:/PROJECT/WEB/sdd_penjadwalan/public/views/404.view.php) (ctrl+o to expand)
+
+  Sekarang buat CSS dan JS (bagian terpenting untuk tampilan!):
+
+● Create(E:/PROJECT/WEB/sdd_penjadwalan/public/assets/css/app.css)
+● Create(E:/PROJECT/WEB/sdd_penjadwalan/public/assets/js/app.js) (ctrl+o to expand)
+
+  Sekarang install dependencies dengan Composer dan buat  .gitignore :
+
+● Create(E:/PROJECT/WEB/sdd_penjadwalan/.gitignore) (ctrl+o to expand)

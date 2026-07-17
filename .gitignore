@@ -1,0 +1,14 @@
+/vendor/
+/.env
+/credentials.json
+*.log
+.DS_Store
+Thumbs.db
+/public/assets/uploads/
+*.swp
+*.json
+credentials/
+# Google Service Account
+*.json
+# atau lebih spesifik:
+jadwal-sekolah-502704-38aa5ab2c1cb.json
