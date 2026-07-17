@@ -11,12 +11,5 @@
       "source": "/(.*)",
       "destination": "/api/index.php"
     }
-  ],
-  "env": {
-    "SPREADSHEET_ID": "@spreadsheet_id",
-    "GOOGLE_SERVICE_ACCOUNT_JSON": "@google_service_account_json",
-    "SESSION_SECRET": "@session_secret",
-    "ADMIN_USERNAME": "@admin_username",
-    "ADMIN_PASSWORD": "@admin_password"
-  }
+  ]
 }
