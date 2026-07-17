@@ -8,6 +8,11 @@ $projectRoot = dirname(__DIR__);
 // Set working directory ke project root
 chdir($projectRoot);
 
+// Simpan path asli dari rewrite supaya router membaca URL yang benar
+$originalPath = $_GET['path'] ?? ($_SERVER['REQUEST_URI'] ?? '/');
+$originalPath = parse_url($originalPath, PHP_URL_PATH) ?: '/';
+$_SERVER['REQUEST_URI'] = $originalPath;
+
 header('Content-Type: text/html; charset=UTF-8');
 
 // Pre-define BASE_PATH sebelum config.php di-load
